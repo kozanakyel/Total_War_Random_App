@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tw_random/random_faction/random_faction_select.dart';
-import 'factions_list/list_faction_widget.dart';
+import 'package:tw_random/faction_project_lib/random_faction/random_faction_select.dart';
+import 'faction_project_lib/factions_list/list_faction_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: BottomNavigationList(),
+      home: const BottomNavigationList(),
     );
   }
 }
@@ -29,9 +29,6 @@ class BottomNavigationList extends StatefulWidget {
 
 class _BottomNavigationListState extends State<BottomNavigationList> {
   int _selectedIndex = 0;
-
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
   static const List<Widget> _widgetOptions = <Widget>[
     RandomFactionButton(),

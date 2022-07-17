@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 import '../faction_create/faction.dart';
 
 class ListFactions extends StatefulWidget {

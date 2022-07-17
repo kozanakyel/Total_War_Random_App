@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import '../constants.dart';
+import '../../constants.dart';
 import '../faction_create/faction.dart';
 
 class RandomFactionButton extends StatefulWidget {
